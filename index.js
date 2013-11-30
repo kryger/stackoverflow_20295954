@@ -10,7 +10,9 @@ requirejs.config({
 });
 
 require([
-    'pixi'
-], function (pixi) {
+    'pixi',
+    'pixi-extensions'
+], function (pixi, ignoreMe) {
     console.log('Pixi ready?', pixi);
+    pixi.customFunction();
 });
